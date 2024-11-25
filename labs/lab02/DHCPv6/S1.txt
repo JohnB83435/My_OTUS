@@ -1,0 +1,23 @@
+hostname S1
+
+username admin secret 5 $1$OET4$GA.mCg/kw5O0ieTNCHGP9/
+no aaa new-model
+
+no ip domain-lookup
+
+banner motd Authorized Users Only!
+Tell me the password
+
+line con 0
+ exec-timeout 120 0
+ privilege level 15
+ logging synchronous
+ login local
+line aux 0
+line vty 0 4
+ exec-timeout 120 0
+ privilege level 15
+ logging synchronous
+ login local
+
+end

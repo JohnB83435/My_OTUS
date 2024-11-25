@@ -1,0 +1,36 @@
+VPCS> ping 192.168.4.3
+
+84 bytes from 192.168.4.3 icmp_seq=1 ttl=63 time=6.708 ms
+84 bytes from 192.168.4.3 icmp_seq=2 ttl=63 time=4.631 ms
+84 bytes from 192.168.4.3 icmp_seq=3 ttl=63 time=4.566 ms
+84 bytes from 192.168.4.3 icmp_seq=4 ttl=63 time=4.977 ms
+84 bytes from 192.168.4.3 icmp_seq=5 ttl=63 time=4.688 ms
+
+VPCS> ping 192.168.4.1
+
+84 bytes from 192.168.4.1 icmp_seq=1 ttl=255 time=1.951 ms
+84 bytes from 192.168.4.1 icmp_seq=2 ttl=255 time=1.880 ms
+84 bytes from 192.168.4.1 icmp_seq=3 ttl=255 time=2.061 ms
+84 bytes from 192.168.4.1 icmp_seq=4 ttl=255 time=2.032 ms
+84 bytes from 192.168.4.1 icmp_seq=5 ttl=255 time=2.083 ms
+
+VPCS> ping 192.168.3.1
+
+84 bytes from 192.168.3.1 icmp_seq=1 ttl=255 time=1.175 ms
+84 bytes from 192.168.3.1 icmp_seq=2 ttl=255 time=2.112 ms
+84 bytes from 192.168.3.1 icmp_seq=3 ttl=255 time=1.808 ms
+84 bytes from 192.168.3.1 icmp_seq=4 ttl=255 time=1.785 ms
+84 bytes from 192.168.3.1 icmp_seq=5 ttl=255 time=2.139 ms
+
+VPCS> trace 192.168.4.3
+trace to 192.168.4.3, 8 hops max, press Ctrl+C to stop
+ 1   192.168.3.1   2.186 ms  1.621 ms  1.516 ms
+ 2   *192.168.4.3   3.513 ms (ICMP type:3, code:3, Destination port unreachable)
+
+VPCS> trace 192.168.4.1
+trace to 192.168.4.1, 8 hops max, press Ctrl+C to stop
+ 1   *192.168.3.1   1.996 ms (ICMP type:3, code:3, Destination port unreachable)  *
+
+VPCS> trace 192.168.3.1
+trace to 192.168.3.1, 8 hops max, press Ctrl+C to stop
+ 1   *192.168.3.1   1.053 ms (ICMP type:3, code:3, Destination port unreachable)  *
