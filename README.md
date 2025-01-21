@@ -4,7 +4,7 @@
 3.  [DHCPv4/6 и SLAAC](labs/lab02)
 4.  [Архитектура сети](labs/lab03)
 5.  [Маршрутизация на основе политик (PBR)](labs/lab04/README.md)
-6.  [OSPF Фильтрация](labs/lab06)
+6.  [OSPF Фильтрация](labs/lab05)
 7.  [IS-IS Продолжение](labs/lab07)
 8.  [EIGRP Продолжение](labs/lab08)
 9.  [BGP Продолжение](labs/lab09)
