@@ -13,4 +13,4 @@
 3.1 [R16](r16/sum/README.md)  
 3.2 [R17](r17/sum/README.md)  
 
-4. [Проверка доступностиь узлов.](result/README.md)
+4. [Проверка доступности узлов.](result/README.md)
