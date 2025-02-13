@@ -1,5 +1,5 @@
 ### Общий план топологии:  
-<img src='pic/top.jpg'>  
+<img src='pic/top.JPG'>  
 
 * [Настройка провайдера "Китрон"](msk-kit-lam.md)  
 * [Настройка провайдера "Ламас"](msk-kit-lam_lam.md)  
