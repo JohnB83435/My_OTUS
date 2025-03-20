@@ -90,7 +90,7 @@ R15#show crypto ipsec sa identity
         #pkts not decompressed: 0, #pkts decompress failed: 0
         #send errors 0, #recv errors 0
 
-[Ссылка обратно на лабораторную работу](/labs/lab13/README.md) 
+
 
 
 ### Spoke to spoke работает между r27 и r28
@@ -117,3 +117,5 @@ R15#show crypto ipsec sa identity
      ending 5, 100-byte ICMP Echos to 103.0.0.2, timeout is 2      econds:
      !!!!
      uccess rate is 100 percent (5/5), round-trip min/avg/max = 6/6/      ms
+
+[Ссылка обратно на лабораторную работу](/labs/lab13/README.md)   
